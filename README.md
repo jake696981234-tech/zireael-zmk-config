@@ -10,6 +10,9 @@ The active keymap is `config/dao.keymap`. It uses a Windows-oriented,
 Miryoku-style architecture with Colemak-DH alphas, mirrored home-row modifiers,
 six thumb layer-taps, and six outer-column fallback keys. The complete usage
 reference is also available in [LAYER_ACCESS_GUIDE.md](LAYER_ACCESS_GUIDE.md).
+Printable visual references are available for the
+[primary layers](docs/keymap/dao-primary.svg) and
+[secondary layers](docs/keymap/dao-secondary.svg).
 
 ## Build stability
 

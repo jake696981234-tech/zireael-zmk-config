@@ -1,0 +1,93 @@
+draw_config:
+  key_w: 64
+  key_h: 58
+  split_gap: 42
+  combo_w: 34
+  combo_h: 30
+  key_rx: 5
+  key_ry: 5
+  dark_mode: false
+  n_columns: 2
+  inner_pad_w: 3
+  inner_pad_h: 3
+  outer_pad_w: 34
+  outer_pad_h: 62
+  line_spacing: 1.15
+  append_colon_to_layer_header: false
+  shrink_wide_legends: 6
+  style_layer_activators: true
+  footer_text: "Center = tap | Bottom = hold/layer | Faded = BASE fallthrough | BT combo = hold 36 + 41 | US ANSI"
+  svg_extra_style: |
+    svg {
+      font-family: "Segoe UI", "DejaVu Sans", sans-serif;
+    }
+    text {
+      fill: #172033;
+    }
+    rect.key {
+      fill: #ffffff;
+      stroke: #263248;
+      stroke-width: 1.5;
+    }
+    rect.key.held {
+      fill: #dbeafe;
+      stroke: #1d4ed8;
+      stroke-width: 2;
+    }
+    rect.key.fallback {
+      fill: #f3f4f6;
+      stroke: #9ca3af;
+      stroke-dasharray: 4 3;
+    }
+    text.fallback {
+      fill: #596273;
+    }
+    rect.combo {
+      fill: #fff7d6;
+      stroke: #8a6500;
+      stroke-width: 1.5;
+    }
+    path.combo {
+      stroke: #8a6500;
+      stroke-width: 1.5;
+    }
+    text.footer {
+      font-size: 12px;
+      fill: #344054;
+    }
+parse_config:
+  raw_binding_map:
+    "&caps_word": Caps Word
+    "&key_repeat": Repeat
+    "&bootloader": UF2 Boot
+    "&sys_reset": Reset
+    "&kp LC(Y)": Redo
+    "&kp LC(V)": Paste
+    "&kp LC(C)": Copy
+    "&kp LC(X)": Cut
+    "&kp LC(Z)": Undo
+    "&msc SCRL_LEFT": Wheel Left
+    "&msc SCRL_RIGHT": Wheel Right
+    "&msc SCRL_UP": Wheel Up
+    "&msc SCRL_DOWN": Wheel Down
+    "&mmv MOVE_UP": Mouse Up
+    "&mmv MOVE_LEFT": Mouse Left
+    "&mmv MOVE_DOWN": Mouse Down
+    "&mmv MOVE_RIGHT": Mouse Right
+    "&mkp MB1": Button 1
+    "&mkp MB2": Button 2
+    "&mkp MB3": Button 3
+    "&kp C_VOL_UP": Volume Up
+    "&kp C_VOL_DN": Volume Down
+    "&kp C_PREV": Previous
+    "&kp C_NEXT": Next
+    "&kp C_STOP": Stop
+    "&kp C_PP": Play / Pause
+    "&kp C_MUTE": Mute
+    "&bt BT_CLR": Clear
+    "&bt BT_SEL 0": Profile 0
+    "&bt BT_SEL 1": Profile 1
+    "&bt BT_SEL 2": Profile 2
+    "&bt BT_SEL 3": Profile 3
+    "&bt BT_SEL 4": Profile 4
+    "&tog GAME": GAME toggle

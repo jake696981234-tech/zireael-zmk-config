@@ -1,0 +1,48 @@
+name: Keymap diagrams
+
+on:
+  push:
+    paths:
+      - "config/dao.keymap"
+      - "modules/dao/boards/dao/dao.dtsi"
+      - "LAYER_ACCESS_GUIDE.md"
+      - "docs/keymap/**"
+      - "tools/render_keymap.py"
+      - "requirements-keymap.txt"
+      - ".github/workflows/keymap-diagrams.yml"
+  pull_request:
+    paths:
+      - "config/dao.keymap"
+      - "modules/dao/boards/dao/dao.dtsi"
+      - "LAYER_ACCESS_GUIDE.md"
+      - "docs/keymap/**"
+      - "tools/render_keymap.py"
+      - "requirements-keymap.txt"
+      - ".github/workflows/keymap-diagrams.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-keymap.txt
+
+      - name: Install keymap-drawer
+        run: python -m pip install -r requirements-keymap.txt
+
+      - name: Regenerate diagrams
+        run: python tools/render_keymap.py
+
+      - name: Verify generated files are current
+        run: git diff --exit-code
