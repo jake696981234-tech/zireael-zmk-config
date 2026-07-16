@@ -1,5 +1,10 @@
 # Critical Firmware Runtime Fixes
 
+> [!WARNING]
+> Historical account of earlier board-migration work. Paths, build status, and
+> keymap details below may no longer match the active repository. The custom
+> board definitions under `modules/dao` remain authoritative.
+
 ## Problem: Firmware Built Successfully But Didn't Run
 
 After flashing the firmware to both keyboard halves, they displayed "SETTINGS ERASE" on Bluetooth instead of running the keyboard application. The build succeeded without errors, but the firmware failed at runtime.

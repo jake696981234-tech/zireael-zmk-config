@@ -1,5 +1,11 @@
 # Dao Keymap Improvements
 
+> [!WARNING]
+> Historical notes for the previous personalised keymap. Do not copy
+> `config/dao.keymap.improved` over the active keymap: that snapshot is not a
+> current build input and contains stale assumptions and positions. See
+> `README.md` and `LAYER_ACCESS_GUIDE.md` for the active layout.
+
 ## 🎯 Key Improvements Made
 
 ### 1. **Combo Keys Added** ⚡

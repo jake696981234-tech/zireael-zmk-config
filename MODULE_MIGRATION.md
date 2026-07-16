@@ -1,5 +1,10 @@
 # ZMK Module Migration - Dao Keyboard
 
+> [!WARNING]
+> Historical migration record. It explains why the Dao board definitions moved
+> into a Zephyr module, but it is not current build verification. Refer to the
+> active manifest, workflow, and a passing GitHub Actions run for build status.
+
 ## Why The Firmware Showed "SETTINGS ERASE"
 
 The firmware was building successfully but **not running** because the board definitions were in the wrong location for Zephyr 4.x / ZMK.

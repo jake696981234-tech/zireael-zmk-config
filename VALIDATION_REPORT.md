@@ -1,5 +1,11 @@
 # Comprehensive Validation Report - Dao Keyboard Firmware
 
+> [!WARNING]
+> Historical report for the previous keymap and build layout. It is not a
+> validation of the active Miryoku-style keymap or the current pinned build.
+> Use `README.md`, `LAYER_ACCESS_GUIDE.md`, and a passing GitHub Actions run as
+> the current sources of truth.
+
 ## Executive Summary
 
 **Status: ✅ READY TO BUILD**
