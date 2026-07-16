@@ -1,7 +1,5 @@
 # SPDX-License-Identifier: MIT
 
-CONFIG_BOARD_DAO_LEFT=y
-
 # Split keyboard configuration - LEFT CENTRAL
 CONFIG_ZMK_SPLIT=y
 CONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
