@@ -8,6 +8,9 @@
 build/
 .west/
 
+# Generated keymap diagrams
+docs/keymap/*.svg
+
 # Editor files
 *.swp
 *.swo
